@@ -94,3 +94,10 @@ Compare average spending based on gender.
 SELECT Gender, AVG(Monetary) AS AvgSpending
 FROM Customers
 GROUP BY Gender;
+
+
+## Data Insights
+- The segmentation revealed three distinct customer groups: high spenders, medium spenders, and low spenders. This helps tailor 
+  marketing strategies.
+- Customers with frequent premium item purchases were categorized as high spenders.
+- The analysis indicates that seasonal promotions were most effective in attracting medium spenders.
