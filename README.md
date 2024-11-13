@@ -27,8 +27,6 @@ This query retrieves all data for initial inspection.
 SELECT * FROM Customers;
 
 ### 2 Select Specific Columns
-View only CustomerID, Name, Income, and Segmentation columns.
-'''
 SELECT CustomerID, Name, Income, Segmentation
 FROM Customers;
 
