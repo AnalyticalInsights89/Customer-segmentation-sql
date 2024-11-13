@@ -20,7 +20,7 @@ The dataset consists of the following attributes:
 - **Segment**: Segmentation label based on customer value.
 
 ## SQL Analysis & Queries
-### 1. View All Customer Data
+Below are the queries for Analysing this data.
 This query retrieves all data for initial inspection.
 
 ```sql
