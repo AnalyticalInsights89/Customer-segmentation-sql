@@ -100,4 +100,7 @@ GROUP BY Gender;
 - The segmentation revealed three distinct customer groups: high spenders, medium spenders, and low spenders. This helps tailor 
   marketing strategies.
 - Customers with frequent premium item purchases were categorized as high spenders.
-- The analysis indicates that seasonal promotions were most effective in attracting medium spenders.
+- Recent Purchases: Customers who made recent purchases should be targeted with follow-up offers or loyalty rewards.
+- Sorting customers by recency shows those who are most engaged, allowing targeted follow-ups to retain them.
+- Identifying top spenders allows for the creation of VIP offers and loyalty programs.
+
