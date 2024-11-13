@@ -27,3 +27,66 @@ This query retrieves all data for initial inspection.
 
 ```sql
 SELECT * FROM Customers;
+
+### 2 Select Specific Columns
+
+SELECT CustomerID, Name, Income, Segmentation
+FROM Customers;
+
+### 3. Filter by Segmentation
+
+SELECT * FROM Customers
+WHERE Segmentation = 'High-Value';
+
+###4. Group by Segmentation
+
+SELECT Segmentation, COUNT(*) AS CustomerCount
+FROM Customers
+GROUP BY Segmentation;
+
+###5. Find Customers with High Income
+
+SELECT * FROM Customers
+WHERE Income > 75000;
+
+###6.  Order Customers by Recency
+
+SELECT * FROM Customers
+ORDER BY Recency DESC;
+
+###7. Find Average Monetary Value
+
+SELECT AVG(Monetary) AS AverageMonetary
+FROM Customers;
+
+###8. Using Case for Income Categories
+
+SELECT CustomerID, Name, Income,
+       CASE
+           WHEN Income > 70000 THEN 'High Income'
+           WHEN Income BETWEEN 40000 AND 70000 THEN 'Medium Income'
+           ELSE 'Low Income'
+       END AS IncomeCategory
+FROM Customers;
+
+###9. Top 3 Customers by Monetary Value
+
+SELECT TOP 3 * FROM Customers
+ORDER BY Monetary DESC;
+
+###9. Segment Customers by Age Range
+
+SELECT CustomerID, Name, Age,
+       CASE
+           WHEN Age < 30 THEN 'Youth'
+           WHEN Age BETWEEN 30 AND 50 THEN 'Adult'
+           ELSE 'Senior'
+       END AS AgeGroup
+FROM Customers;
+
+###10. Analyze Spending Trends by Gender
+Compare average spending based on gender.
+
+SELECT Gender, AVG(Monetary) AS AvgSpending
+FROM Customers
+GROUP BY Gender;
